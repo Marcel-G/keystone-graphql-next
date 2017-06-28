@@ -10,10 +10,9 @@ Full stack node with NextJs frontend & KeystoneJs backend over GraphQL.
 ## Up and running
 1. Install the latest [Node.js](https://nodejs.org), [MongoDB](http://www.mongodb.org/downloads) and [Yarn](https://yarnpkg.com/en/docs/install).
 2. Inslide `api/` copy `.env.example`, rename it `.env` and customize.
-3. Run `yarn` to install root dependencies.
-4. Run `yarn install` to install dependencies in child directories.
-5. Run `yarn dev` to start dev servers.
-6. Visit `localhost:3000` for frontend. `localhost:3001/keystone` for backend
+3. Run `yarn` to install dependencies.
+4. Run `yarn dev` to start dev servers.
+5. Visit `localhost:3000` for frontend. `localhost:3001/keystone` for backend
 
 ## URLs & Logins
 Frontend - `localhost:3000`

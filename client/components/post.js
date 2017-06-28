@@ -26,7 +26,7 @@ const Post = ({ data: { post, loading }, deletePost, postKey }) => (
               </span>}
             <p>{post.content}</p>
           </article>
-          {post.documents &&
+          {!!post.documents.length &&
             <aside>
               <h2>Documents ({post.documents.length})</h2>
               <ImageBlock

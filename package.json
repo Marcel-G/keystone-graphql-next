@@ -11,7 +11,7 @@
     "dev:client": "cd client && npm run dev",
     "dev:api": "cd api && npm run dev",
     "dev": "concurrently \"npm run dev:api\" \"npm run dev:client\"",
-    "install": "yarn && concurrently \"cd api && yarn --ignore-engines\" \"cd client && yarn --ignore-engines\""
+    "install": "concurrently \"cd api && yarn --ignore-engines\" \"cd client && yarn --ignore-engines\""
   },
   "dependencies": {
     "formsy-material-ui": "^0.6.0",

@@ -77,8 +77,7 @@ class CreatePost extends Component {
                   <FilePicker
                     name={'documents'}
                     label={'Upload Documents'}
-                    multiple
-                    required />
+                    multiple />
                   <RaisedButton
                       type="submit"
                       disabled={!this.state.canSubmit}

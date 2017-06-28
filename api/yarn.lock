@@ -178,11 +178,10 @@ aphrodite@^0.5.0:
     asap "^2.0.3"
     inline-style-prefixer "^2.0.0"
 
-apollo-upload-server@^2.0.1:
+apollo-upload-server@Marcel-G/apollo-upload-server#deploy:
   version "2.0.1"
-  resolved "https://registry.yarnpkg.com/apollo-upload-server/-/apollo-upload-server-2.0.1.tgz#d96b51c4bd5a50dbe51aa1aee9f7ba13bbeec1b2"
+  resolved "https://codeload.github.com/Marcel-G/apollo-upload-server/tar.gz/c306671f7cceae45f349bb343cc6cb8b614cc12c"
   dependencies:
-    formidable "^1.1.1"
     mkdirp "^0.5.1"
     object-path "^0.11.4"
 
@@ -2985,10 +2984,6 @@ form-data@~2.1.1:
     asynckit "^0.4.0"
     combined-stream "^1.0.5"
     mime-types "^2.1.12"
-
-formidable@^1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/formidable/-/formidable-1.1.1.tgz#96b8886f7c3c3508b932d6bd70c4d3a88f35f1a9"
 
 formidable@~1.0.14:
   version "1.0.17"

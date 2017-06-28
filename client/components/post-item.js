@@ -32,6 +32,9 @@ const PostItem = ({
                 border-top: 1px solid #000;
                 margin-bottom: 1em;
             }
+            article a {
+              text-decoration: inherit;
+            }
             .author {
                 flex: 0 0;
                 white-space: nowrap;
