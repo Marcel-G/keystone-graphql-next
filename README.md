@@ -17,8 +17,12 @@ Full stack node with NextJs front-end & KeystoneJs backend over GraphQL.
 
 ## URLs & Logins
 Frontend - `localhost:3000`
+
 Keystone Backend - `localhost:3001/keystone`
-Example user - `user@keystonejs.com` pas - `password`
+
+Example user - `user@keystonejs.com`
+
+Example password - `password`
 
 
 ## Scripts
