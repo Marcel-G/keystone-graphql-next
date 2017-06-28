@@ -31,4 +31,4 @@ Example password - `password`
 | `yarn install`        | Installs dependencies in api/ & client/ dirs    |
 | `yarn dev`            | api/ & client/ built and run for dev.           |
 | `yarn build`          | Builds api/ & client/ for production            |
-| `start start`         | Starts api/ & client/ from built bundles        |
+| `yarn start`         | Starts api/ & client/ from built bundles        |
