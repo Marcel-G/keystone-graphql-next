@@ -14,8 +14,6 @@
     "install": "concurrently \"cd api && yarn --ignore-engines\" \"cd client && yarn --ignore-engines\""
   },
   "dependencies": {
-    "formsy-material-ui": "^0.6.0",
-    "material-ui": "^0.18.4"
   },
   "devDependencies": {
     "concurrently": "^3.4.0",
