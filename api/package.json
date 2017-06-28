@@ -1,0 +1,69 @@
+{
+  "name": "keystone-api",
+  "version": "0.0.1",
+  "scripts": {
+    "lint": "standard",
+    "start": "NODE_ENV=production pm2 start keystone.js --name \"keystone-api\"",
+    "prebuild": "rm -f *.dist.js",
+    "build": "rollup -c rollup.config.models.js && rollup -c rollup.config.routes.js",
+    "dev": "concurrently \"npm run build -- --watch\" \"nodemon keystone.js --watch routes.dist.js\""
+  },
+  "dependencies": {
+    "apollo-upload-server": "Marcel-G/apollo-upload-server#deploy",
+    "cors": "^2.8.3",
+    "dotenv": "4.0.0",
+    "express": "^4.15.3",
+    "express-jwt": "^5.1.0",
+    "graphql": "^0.9.6",
+    "graphql-server-express": "^0.7.2",
+    "graphql-tools": "^0.11.0",
+    "jsonwebtoken": "^7.3.0",
+    "keystone": "4.0.0-beta.5",
+    "keystone-email": "1.0.5",
+    "lodash": "^4.13.1",
+    "lodash.get": "^4.4.2",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.4.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "concurrently": "^3.4.0",
+    "eslint-config-standard": "^10.2.1",
+    "nodemon": "^1.11.0",
+    "rollup": "^0.41.6",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-watch": "^3.2.2",
+    "standard": "^10.0.2"
+  },
+  "main": "keystone.js",
+  "engines": {
+    "node": ">=6.4"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": 6.4
+          },
+          "modules": false,
+          "loose": true
+        }
+      ],
+      "stage-0"
+    ],
+    "plugins": [
+      "external-helpers"
+    ]
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "dist/**"
+    ]
+  }
+}

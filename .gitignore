@@ -1,0 +1,17 @@
+logs
+*.log
+npm-debug.log*
+pids
+*.pid
+*.seed
+bundle.js
+.env
+coverage
+.lock-wscript
+node_modules
+.DS_Store
+*dist.js
+.next
+public/uploads
+
+api/public/uploads/documents/

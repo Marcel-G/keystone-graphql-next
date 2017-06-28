@@ -1,0 +1,24 @@
+{
+  "name": "Keystone-graphql-nextjs",
+  "version": "0.0.1",
+  "scripts": {
+    "start:client": "cd client && npm run start",
+    "start:api": "cd api && npm run start",
+    "start": "npm run start:api && npm run start:client",
+    "build:client": "cd client && npm run build",
+    "build:api": "cd api && npm run build",
+    "build": "concurrently \"npm run build:api\" \"npm run build:client\"",
+    "dev:client": "cd client && npm run dev",
+    "dev:api": "cd api && npm run dev",
+    "dev": "concurrently \"npm run dev:api\" \"npm run dev:client\"",
+    "install": "yarn && concurrently \"cd api && yarn --ignore-engines\" \"cd client && yarn --ignore-engines\""
+  },
+  "dependencies": {
+    "formsy-material-ui": "^0.6.0",
+    "material-ui": "^0.18.4"
+  },
+  "devDependencies": {
+    "concurrently": "^3.4.0",
+    "nodemon": "^1.11.0"
+  }
+}

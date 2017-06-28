@@ -1,0 +1,9 @@
+{
+  "extends": [
+    "react",
+    "standard"
+    ],
+  "plugins": [
+    "react"
+  ]
+}
