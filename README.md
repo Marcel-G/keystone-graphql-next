@@ -8,7 +8,7 @@ Full stack node with NextJs front-end & KeystoneJs backend over GraphQL.
 - Document upload
 
 ## Up and running
-1. Install the latest [Node.js and NPM](https://nodejs.org).
+1. Install the latest [Node.js](https://nodejs.org), [MongoDB](http://www.mongodb.org/downloads) and [Yarn](https://yarnpkg.com/en/docs/install).
 2. Inslide `api/` copy `.env.example`, rename it `.env` and customize.
 3. Run `yarn` to install root dependencies.
 4. Run `yarn install` to install dependencies in child directories.
