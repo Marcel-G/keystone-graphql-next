@@ -1,6 +1,6 @@
 🐄
 # Keystone graphql nextjs
-Full stack node with NextJs front-end & KeystoneJs backend over GraphQL.
+Full stack node with NextJs frontend & KeystoneJs backend over GraphQL.
 
 - User Accounts register & login
 - Create / delete posts
